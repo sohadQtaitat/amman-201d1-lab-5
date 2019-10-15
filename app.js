@@ -11,7 +11,7 @@ Test this function by hand in the console to get it working, and when you think 
 function sum(a, b) {
     //give 4,7 should return [11,'The sum of 4 and 7 is 11']
     var c = a + b;
-    var resultString = 'the sum of ' + a + ' and' + b + ' is' + c + ' .';
+    var resultString = 'The sum of ' + a + ' and ' + b + ' is ' + c + '.';
     return [c, resultString];
 }
 
@@ -33,7 +33,7 @@ Test this function by hand in the console to get it working, and when you think 
 function multiply(a, b) { //eslint-disable-line
     var c = a * b;
 
-    var result2 = 'The product of ' + a + ' and' + b + ' is' + c + ' .';
+    var result2 = 'The product of ' + a + ' and ' + b + ' is ' + c + '.';
 
     return [c, result2];
 
@@ -57,13 +57,19 @@ IMPORTANT DETAIL: You may not use the arithmetic operators + and * in this funct
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSumAndMultiply() function and see if the test passes.*/
 
 // Write your code here
+
 function sumAndMultiply(a, b, c) { //eslint-disable-line
 
+    var sum3 = a + b + c;
+    var pro3 = a * b * c;
+    var A3 =  a + ' and ' + b + ' and ' + c + ' sum to ' + sum3 + '.' ;
+    var A4 = 'The product of ' + a + ' and ' + b + ' and ' + c + ' is ' + pro3 + '.' ;
+    return [sum3, pro3, A3 ,A4];
 }
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
-// testSumAndMultiply(4,7,5);
 
+testSumAndMultiply(4, 7, 5);
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
 /////////////////////////////////////
